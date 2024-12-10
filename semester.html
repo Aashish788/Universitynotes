@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- <link rel="stylesheet" href="/semester.css"> -->
+    </head>
+    <style>
+      *{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+body{
+  background: #333;
+}
+
+.right{
+  position: relative;
+  top: 50vh; left: 35%;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translate(-50%,-50%);
+  
+}
+.card{
+  /* cursor: pointer; */
+  width: 340px;
+  height: 480px;
+
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background-color:  #333;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content h2{
+  color: #2c3e50;
+  position: relative;
+  text-align: center;
+
+  width: 100%;
+}
+.sub{
+  position: relative;
+}
+.sub1{
+  position: relative;
+  font-size:large;
+}
+button{
+  margin: 10% 35% ;
+  border: 2px solid purple;
+  border-radius: 10%;
+  }
+
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+    </style>
+
+
+
+  <body>
+
+    <div class="card middle">
+      <div class="front">
+        <img src="sem1z.jpg" alt="">
+      </div>
+      <div class="back">
+        <div class="back-content ">
+          <h2>SEMESTER 1</h2><br>
+          <span class="sub">
+            <b>SUBJECTS</b>
+          </span>
+          <br>
+        <span class="sub1"> <br>
+           <ul>
+            <li>↪Emerging technology in engineering</li><br>
+            <li>↪Soft skill 1</li><br>
+            <li>↪Fundamentals of mechanical engineering</li><br>
+            <li>↪Engineering mathetematics1</li><br>
+            <li>↪Emergingdomain in electronics engineering</li><br>
+            <li>↪Engineering chemistry</li><br>
+          </ul>
+          </span>  
+         <a href="NotesSemester1.html"><button style="cursor: pointer;">click here for notes</button></a>
+            
+            
+        
+        </div>
+      </div>
+    </div>
+
+
+<div class="right">
+    <div class="card middle">
+      <div class="front">
+        <img src="sem11.jpeg" alt="">
+      </div>
+      <div class="back">
+        <div class="back-content ">
+          <h2>Semester 2</h2><br>
+          <span><b>Subjects</b></span><br><br>
+          <ul><span class="sub1">
+            <li>↪AI for Engineering</li><br>
+            <li>↪Soft skill 2</li><br>
+            <li>↪Programming for problem solving</li><br>
+            <li>↪Engineering mathetematics2</li> <br>
+            <li>↪Basic electrical engineering</li><br>
+            <li>↪Engineering physics</li><br>
+          </ul></span>
+    <a href="NotesSemester2.html"> <button style="cursor: pointer;">click here for notes</button></a>
+          <div class="sm">
+          </div>
+        </div>
+</div>
+  </body>
+</html>
